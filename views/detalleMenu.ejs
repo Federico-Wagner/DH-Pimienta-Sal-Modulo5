@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('./partials/navbar') %>
+  </head>
+
+  <body>
+    <!-- Navbar (sit on top) -->
+    <%- include('./partials/navbar') %>
+
+    <!-- Header -->
+    <%- include('./partials/header') %>
+
+    <!-- Page content -->
+    <div class="ps-content">
+
+      <!-- Menu Section -->
+      <div class="ps-row ps-padding-64" id="menu">
+        <div class="ps-col l6 ps-padding-large">
+          <h1 class="ps-center"><%=producto.nombre%></h1>
+          <br />
+          <h4><%=producto.descripcion%></h4>
+          <p class="ps-text-grey">
+            U$S <%=producto.precio%>
+          </p>
+        </div>
+
+        <div class="ps-col l6 ps-padding-large ps-img-menu">
+          <img
+            src="/images/<%=producto.img%>"
+            class="ps-round ps-image ps-opacity-min"
+            alt="Menu"
+          />
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <%- include('./partials/footer') %>
+      
+    </div>
+  </body>
+</html>
